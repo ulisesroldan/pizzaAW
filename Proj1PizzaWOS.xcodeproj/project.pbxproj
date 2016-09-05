@@ -21,6 +21,8 @@
 		E195DEC51D7B4B1100B773B0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195DEC41D7B4B1100B773B0 /* InterfaceController.swift */; };
 		E195DEC71D7B4B1100B773B0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195DEC61D7B4B1100B773B0 /* ExtensionDelegate.swift */; };
 		E195DEC91D7B4B1100B773B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E195DEC81D7B4B1100B773B0 /* Assets.xcassets */; };
+		E1B3604E1D7DFE8C00C216CE /* DatosAW.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3604D1D7DFE8C00C216CE /* DatosAW.swift */; };
+		E1B360521D7E0FC700C216CE /* TamanoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B360511D7E0FC700C216CE /* TamanoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		E195DEC61D7B4B1100B773B0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		E195DEC81D7B4B1100B773B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E195DECA1D7B4B1100B773B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1B3604D1D7DFE8C00C216CE /* DatosAW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosAW.swift; sourceTree = "<group>"; };
+		E1B360511D7E0FC700C216CE /* TamanoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TamanoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,8 @@
 				E195DEC61D7B4B1100B773B0 /* ExtensionDelegate.swift */,
 				E195DEC81D7B4B1100B773B0 /* Assets.xcassets */,
 				E195DECA1D7B4B1100B773B0 /* Info.plist */,
+				E1B3604D1D7DFE8C00C216CE /* DatosAW.swift */,
+				E1B360511D7E0FC700C216CE /* TamanoController.swift */,
 			);
 			path = "Proj1PizzaWOS WatchKit Extension";
 			sourceTree = "<group>";
@@ -429,6 +435,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B3604E1D7DFE8C00C216CE /* DatosAW.swift in Sources */,
+				E1B360521D7E0FC700C216CE /* TamanoController.swift in Sources */,
 				E195DEC71D7B4B1100B773B0 /* ExtensionDelegate.swift in Sources */,
 				E195DEC51D7B4B1100B773B0 /* InterfaceController.swift in Sources */,
 			);
@@ -717,6 +725,7 @@
 				E195DECF1D7B4B1100B773B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E195DED11D7B4B1100B773B0 /* Build configuration list for PBXNativeTarget "Proj1PizzaWOS WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +734,7 @@
 				E195DED31D7B4B1100B773B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E195DED51D7B4B1100B773B0 /* Build configuration list for PBXNativeTarget "Proj1PizzaWOS" */ = {
 			isa = XCConfigurationList;
@@ -733,6 +743,7 @@
 				E195DED71D7B4B1100B773B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E195DED81D7B4B1100B773B0 /* Build configuration list for PBXNativeTarget "Proj1PizzaWOSTests" */ = {
 			isa = XCConfigurationList;
@@ -741,6 +752,7 @@
 				E195DEDA1D7B4B1100B773B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E195DEDB1D7B4B1100B773B0 /* Build configuration list for PBXNativeTarget "Proj1PizzaWOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -749,6 +761,7 @@
 				E195DEDD1D7B4B1100B773B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

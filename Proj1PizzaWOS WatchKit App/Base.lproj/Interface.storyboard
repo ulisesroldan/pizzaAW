@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Proj1PizzaWOS_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="132" height="59.5" alignment="center" text="Bienvenido!" textAlignment="center" id="Ept-km-cSk"/>
+                        <button width="1" alignment="left" title="Píde tu pizza -&gt;" id="HyY-JC-FZZ">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.98535657050000003" green="0.94562716199999997" blue="0.8061534092" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="KNi-I7-piQ" kind="push" id="wKn-Wq-rzf"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="245" y="303"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="6q6-QA-z7A">
+            <objects>
+                <controller id="KNi-I7-piQ">
+                    <items>
+                        <label width="136" height="32.5" alignment="left" text="Elige el tamaño" textAlignment="center" id="gVv-G7-3q9"/>
+                        <picker height="100" alignment="left" id="pHd-Dg-SoO"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="486" y="303"/>
         </scene>
     </scenes>
 </document>
