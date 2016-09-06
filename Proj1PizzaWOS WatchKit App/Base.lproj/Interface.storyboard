@@ -23,17 +23,147 @@
             </objects>
             <point key="canvasLocation" x="245" y="303"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Tamano Controller-->
         <scene sceneID="6q6-QA-z7A">
             <objects>
-                <controller id="KNi-I7-piQ">
+                <controller id="KNi-I7-piQ" customClass="tamanoController" customModule="Proj1PizzaWOS_WatchKit_Extension">
                     <items>
-                        <label width="136" height="32.5" alignment="left" text="Elige el tamaño" textAlignment="center" id="gVv-G7-3q9"/>
-                        <picker height="100" alignment="left" id="pHd-Dg-SoO"/>
+                        <group width="1" height="36.5" alignment="left" id="ALj-ZP-Jbv">
+                            <items>
+                                <label width="62" height="32.5" alignment="left" text="Tamaño" textAlignment="left" id="gVv-G7-3q9"/>
+                                <button width="62" height="32.5" alignment="center" title="Masa &gt;" id="PZy-jG-fec">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.98535657050000003" green="0.94562716199999997" blue="0.8061534092" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="pasaMasa" destination="KNi-I7-piQ" id="yJ5-4C-Gcg"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <picker height="109" alignment="left" id="pHd-Dg-SoO">
+                            <connections>
+                                <action selector="elegirTamano:" destination="KNi-I7-piQ" id="HS4-wD-AHs"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="lblTamano" destination="gVv-G7-3q9" id="c1S-jz-n8a"/>
+                        <outlet property="tamanoPicker" destination="pHd-Dg-SoO" id="LYF-pU-5s6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="486" y="295"/>
+        </scene>
+        <!--vistaMasa-->
+        <scene sceneID="tgc-W4-DZj">
+            <objects>
+                <controller identifier="vistaMasa" id="AQA-LM-c4z" customClass="masaController" customModule="Proj1PizzaWOS_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="Anm-Oq-Fsv">
+                            <items>
+                                <label width="46" height="32.5" alignment="left" text="Masa" textAlignment="left" id="IXw-DJ-jtd"/>
+                                <button width="68" height="32.5" alignment="right" title="Queso &gt;" id="pKQ-8W-bU9">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.98535657050000003" green="0.94562716199999997" blue="0.8061534092" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                        <picker height="109" alignment="left" id="KxO-Ho-tQd"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="486" y="303"/>
+            <point key="canvasLocation" x="693" y="295"/>
+        </scene>
+        <!--Queso Controller-->
+        <scene sceneID="wH5-Hc-ntl">
+            <objects>
+                <controller id="EQv-PY-E1f" customClass="quesoController" customModule="Proj1PizzaWOS_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="PCo-rt-f3Q">
+                            <items>
+                                <label width="46" height="32.5" alignment="left" text="Queso" textAlignment="left" id="o6V-Hg-AL2"/>
+                                <button width="68" height="32.5" alignment="right" title="Ingr. &gt;" id="H8g-ui-8YJ">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.98535657050000003" green="0.94562716199999997" blue="0.8061534092" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                        <picker height="100" alignment="left" id="3zq-sv-11N"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="895" y="295"/>
+        </scene>
+        <!--Ingredientes Controller-->
+        <scene sceneID="7Aj-gC-Brg">
+            <objects>
+                <controller id="tst-cY-w20" customClass="ingredientesController" customModule="Proj1PizzaWOS_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="aHA-W2-0wH">
+                            <items>
+                                <label width="59" height="32.5" alignment="left" text="Ingred." textAlignment="left" id="bI4-FJ-57n"/>
+                                <button width="68" height="32.5" alignment="right" title="Extras &gt;" id="PLD-bS-49y">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.98535657050000003" green="0.94562716199999997" blue="0.8061534092" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1099" y="303"/>
+        </scene>
+        <!--Extras Controller-->
+        <scene sceneID="98T-A2-cpD">
+            <objects>
+                <controller id="Xno-dv-4wP" customClass="extrasController" customModule="Proj1PizzaWOS_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="vT6-Vg-9Jz">
+                            <items>
+                                <label width="46" height="32.5" alignment="left" text="Extras" textAlignment="left" id="Kj7-u8-GXC"/>
+                                <button width="80" height="32.5" alignment="right" title="Confirm &gt;" id="8e6-NA-CVf">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.98535657050000003" green="0.94562716199999997" blue="0.8061534092" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1307" y="303"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="jQJ-kQ-SyN">
+            <objects>
+                <controller id="u1e-4f-4WG">
+                    <items>
+                        <group width="1" alignment="left" id="RZT-Fr-Zrm">
+                            <items>
+                                <label width="78" height="32.5" alignment="left" text="Confirmar" textAlignment="left" id="OBm-bp-mX2"/>
+                                <button width="60" height="32.5" alignment="right" title="Pedir&gt;" id="MZI-ut-nIH">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.98535657050000003" green="0.94562716199999997" blue="0.8061534092" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="fhN-Sx-PUf"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1504" y="303"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="m9q-bW-Iud">
+            <objects>
+                <controller id="pOW-SL-muM">
+                    <items>
+                        <label width="134.5" height="52.5" alignment="left" text="Listo!" textAlignment="center" numberOfLines="0" id="VDC-el-POj"/>
+                        <separator alignment="left" id="Wq7-eM-n8Z"/>
+                        <label width="136" height="65.5" alignment="left" text="Tu Pizza se está elaborando..." textAlignment="center" numberOfLines="0" id="W3Q-pJ-ad8"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1703" y="303"/>
         </scene>
     </scenes>
 </document>

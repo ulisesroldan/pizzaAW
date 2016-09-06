@@ -22,7 +22,11 @@
 		E195DEC71D7B4B1100B773B0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195DEC61D7B4B1100B773B0 /* ExtensionDelegate.swift */; };
 		E195DEC91D7B4B1100B773B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E195DEC81D7B4B1100B773B0 /* Assets.xcassets */; };
 		E1B3604E1D7DFE8C00C216CE /* DatosAW.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3604D1D7DFE8C00C216CE /* DatosAW.swift */; };
-		E1B360521D7E0FC700C216CE /* TamanoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B360511D7E0FC700C216CE /* TamanoController.swift */; };
+		E1B360541D7E24D900C216CE /* tamanoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B360531D7E24D900C216CE /* tamanoController.swift */; };
+		E1B360561D7E261600C216CE /* masaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B360551D7E261600C216CE /* masaController.swift */; };
+		E1B360581D7E265D00C216CE /* quesoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B360571D7E265D00C216CE /* quesoController.swift */; };
+		E1B3605A1D7E269C00C216CE /* ingredientesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B360591D7E269C00C216CE /* ingredientesController.swift */; };
+		E1B3605C1D7E29A800C216CE /* extrasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3605B1D7E29A800C216CE /* extrasController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +109,11 @@
 		E195DEC81D7B4B1100B773B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E195DECA1D7B4B1100B773B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1B3604D1D7DFE8C00C216CE /* DatosAW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosAW.swift; sourceTree = "<group>"; };
-		E1B360511D7E0FC700C216CE /* TamanoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TamanoController.swift; sourceTree = "<group>"; };
+		E1B360531D7E24D900C216CE /* tamanoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tamanoController.swift; sourceTree = "<group>"; };
+		E1B360551D7E261600C216CE /* masaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masaController.swift; sourceTree = "<group>"; };
+		E1B360571D7E265D00C216CE /* quesoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quesoController.swift; sourceTree = "<group>"; };
+		E1B360591D7E269C00C216CE /* ingredientesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ingredientesController.swift; sourceTree = "<group>"; };
+		E1B3605B1D7E29A800C216CE /* extrasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extrasController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,7 +221,11 @@
 				E195DEC81D7B4B1100B773B0 /* Assets.xcassets */,
 				E195DECA1D7B4B1100B773B0 /* Info.plist */,
 				E1B3604D1D7DFE8C00C216CE /* DatosAW.swift */,
-				E1B360511D7E0FC700C216CE /* TamanoController.swift */,
+				E1B360531D7E24D900C216CE /* tamanoController.swift */,
+				E1B360551D7E261600C216CE /* masaController.swift */,
+				E1B360571D7E265D00C216CE /* quesoController.swift */,
+				E1B360591D7E269C00C216CE /* ingredientesController.swift */,
+				E1B3605B1D7E29A800C216CE /* extrasController.swift */,
 			);
 			path = "Proj1PizzaWOS WatchKit Extension";
 			sourceTree = "<group>";
@@ -436,9 +448,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B3604E1D7DFE8C00C216CE /* DatosAW.swift in Sources */,
-				E1B360521D7E0FC700C216CE /* TamanoController.swift in Sources */,
+				E1B360541D7E24D900C216CE /* tamanoController.swift in Sources */,
 				E195DEC71D7B4B1100B773B0 /* ExtensionDelegate.swift in Sources */,
+				E1B360581D7E265D00C216CE /* quesoController.swift in Sources */,
+				E1B3605C1D7E29A800C216CE /* extrasController.swift in Sources */,
 				E195DEC51D7B4B1100B773B0 /* InterfaceController.swift in Sources */,
+				E1B3605A1D7E269C00C216CE /* ingredientesController.swift in Sources */,
+				E1B360561D7E261600C216CE /* masaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
