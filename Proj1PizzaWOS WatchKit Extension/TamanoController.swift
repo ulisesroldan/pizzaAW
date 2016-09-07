@@ -11,32 +11,23 @@ import Foundation
 
 
 class tamanoController: WKInterfaceController {
-
-    
-    @IBOutlet var tamanoPicker: WKInterfacePicker!
     
     var pickerDataSource = ["Chica", "Mediana", "Grande"];
     var pickerItems:[WKPickerItem]?
     var tamanoSel = "Chico"
     var pedido:[String] = []
-    @IBOutlet var lblTamanoSel: WKInterfaceLabel!
-    @IBOutlet var lblTamano: WKInterfaceLabel!
     
+    @IBOutlet var tamanoPicker: WKInterfacePicker!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        // Configure interface objects here.
-        
         pickerItems = pickerDataSource.map(){
             let pickerItem = WKPickerItem()
             pickerItem.title = $0
             pickerItem.caption = $0
-            //lblTamano.setText($0)
             return pickerItem
         }
-        
         tamanoPicker.setItems(pickerItems)
-        
-    }
+      }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
@@ -49,15 +40,16 @@ class tamanoController: WKInterfaceController {
     }
 
     @IBAction func pasaMasa() {
-        if (!pedido.isEmpty) {
+    if (!pedido.isEmpty) {
             pedido = pedido.filter(){
                 $0 != tamanoSel
-            }
+        }
         }
         pedido.append(tamanoSel)
-        pushControllerWithName("vistaMasa", context: tamanoSel)
+       self.pushControllerWithName("vistaMasa", context: pedido)
     }
-    @IBAction func elegirTamano(value: Int) {
+    
+    @IBAction func eligeTamano(value: Int) {
         if (!pedido.isEmpty) {
             pedido = pedido.filter(){
                 $0 != tamanoSel
@@ -66,11 +58,8 @@ class tamanoController: WKInterfaceController {
         //Eliminar esta lìnea
         NSLog("List Picker: \(pickerDataSource[value]) selected")
         let pickedItem = pickerItems![value]
-        //lblTamanoSel.setText(pickedItem.title!)
         if pickedItem.title != nil {
             tamanoSel = pickedItem.title!
         }
-      //pushControllerWithName("vistaMasaS", context: datosContexto)
-        
     }
-}
+ }
