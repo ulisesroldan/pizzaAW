@@ -27,6 +27,8 @@
 		E1B360581D7E265D00C216CE /* quesoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B360571D7E265D00C216CE /* quesoController.swift */; };
 		E1B3605A1D7E269C00C216CE /* ingredientesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B360591D7E269C00C216CE /* ingredientesController.swift */; };
 		E1B3605C1D7E29A800C216CE /* extrasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3605B1D7E29A800C216CE /* extrasController.swift */; };
+		E1B3605E1D7F59E000C216CE /* PruebaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3605D1D7F59E000C216CE /* PruebaController.swift */; };
+		E1B360601D8096E000C216CE /* confirmarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3605F1D8096E000C216CE /* confirmarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		E1B360571D7E265D00C216CE /* quesoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quesoController.swift; sourceTree = "<group>"; };
 		E1B360591D7E269C00C216CE /* ingredientesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ingredientesController.swift; sourceTree = "<group>"; };
 		E1B3605B1D7E29A800C216CE /* extrasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extrasController.swift; sourceTree = "<group>"; };
+		E1B3605D1D7F59E000C216CE /* PruebaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PruebaController.swift; sourceTree = "<group>"; };
+		E1B3605F1D8096E000C216CE /* confirmarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = confirmarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +230,8 @@
 				E1B360571D7E265D00C216CE /* quesoController.swift */,
 				E1B360591D7E269C00C216CE /* ingredientesController.swift */,
 				E1B3605B1D7E29A800C216CE /* extrasController.swift */,
+				E1B3605D1D7F59E000C216CE /* PruebaController.swift */,
+				E1B3605F1D8096E000C216CE /* confirmarController.swift */,
 			);
 			path = "Proj1PizzaWOS WatchKit Extension";
 			sourceTree = "<group>";
@@ -448,7 +454,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B3604E1D7DFE8C00C216CE /* DatosAW.swift in Sources */,
+				E1B360601D8096E000C216CE /* confirmarController.swift in Sources */,
 				E1B360541D7E24D900C216CE /* tamanoController.swift in Sources */,
+				E1B3605E1D7F59E000C216CE /* PruebaController.swift in Sources */,
 				E195DEC71D7B4B1100B773B0 /* ExtensionDelegate.swift in Sources */,
 				E1B360581D7E265D00C216CE /* quesoController.swift in Sources */,
 				E1B3605C1D7E29A800C216CE /* extrasController.swift in Sources */,
